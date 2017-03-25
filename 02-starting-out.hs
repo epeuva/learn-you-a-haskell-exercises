@@ -26,7 +26,7 @@ isPalindrome l = l == reverse l
  -
  - For example: concat [[1,2,3],[3,4,5]] returns [1,2,3,3,4,5]
  -}
-duplicate xs = undefined
+duplicate xs = concat [[value,value] | value <- xs]
 
 {-
  - Imitate the functinality of zip
