@@ -17,7 +17,7 @@ penultimate l = last (init l)
 findK k l = head (reverse (take (k+1) l))
 
 -- Determine if list l is a palindrome
-isPalindrome l = undefined
+isPalindrome l = l == reverse l
 
 {-
  - Duplicate the elements in list xs, for example "duplicate [1,2,3]" would give the list [1,1,2,2,3,3]
