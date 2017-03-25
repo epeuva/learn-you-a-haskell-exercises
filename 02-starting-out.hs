@@ -37,7 +37,7 @@ ziplike xs ys = undefined
 
 -- Split a list l at element k into a tuple: The first part up to and including k, the second part after k
 -- For example "splitAtIndex 3 [1,1,1,2,2,2]" returns ([1,1,1],[2,2,2])
-splitAtIndex k l = undefined
+splitAtIndex k l = (take k l, drop k l)
 
 -- Drop the element at index k in list l
 -- For example "dropK 3 [0,0,0,1,0,0,0]" returns [0,0,0,0,0,0]
